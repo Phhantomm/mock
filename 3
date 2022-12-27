@@ -1,0 +1,15 @@
+def diagonal(lst):
+#matricis aramtavari diagonalis ricxvebis jami
+    elements = list()
+    sum = 0
+    for i in lst:
+        for j in i:
+            elements.append(j)
+    elements.pop(8)
+    for i in range(2, len(elements), 2):
+        sum += elements[i]
+
+    return sum
+
+lst = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(diagonal(lst))
