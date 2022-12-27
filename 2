@@ -1,0 +1,18 @@
+def minusavrg(main):
+    negative = list()
+    sum = 0
+    for i in main:
+        if i < 0:
+            negative.append(i)
+
+    if len(negative) == 0:
+        return 0
+    else:
+        for i in negative:
+            sum += i
+        averrage = sum / len(negative)
+
+    return averrage
+
+
+print(minusavrg([4, -6, 9, 8, -1]))
