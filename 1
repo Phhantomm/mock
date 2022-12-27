@@ -1,0 +1,11 @@
+def even(list):
+    sum = 0
+    for i in list:
+        if i % 2 == 0:
+            sum += i
+    if sum == 0:
+        return -1
+
+    return sum
+
+print(even([3, -1, -7, -9 ]))
